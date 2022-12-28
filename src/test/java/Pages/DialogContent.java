@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 public class DialogContent extends Parent{
 
     public DialogContent()
@@ -73,7 +75,8 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//span[@class='mat-slide-toggle-thumb-container'])[11]")
     private WebElement toggleBar;
 
-
+    @FindBy(xpath = "//tbody[@role='rowgroup']/tr/td[2]")
+    public List<WebElement> nameList;
 
 
 
@@ -90,8 +93,6 @@ public class DialogContent extends Parent{
             case "searchInput" : myElement=searchInput;break;
             case "integrationCode" : myElement=integrationCode;break;
             case "priorityCode" : myElement=priorityCode;break;
-
-
         }
             sendKeysFunction(myElement,value);
     }

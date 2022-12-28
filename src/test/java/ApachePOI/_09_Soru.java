@@ -10,6 +10,19 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class _09_Soru {
+    /*
+     Yeni bir excele merhaba Dünya 1 şeklinde yazdıktan sonra , programı tekrar
+     çalıştırdığınızda aynı excelin bir alt satırına devam ediniz.
+     Program her çalıştıkça aşağıdaki gibi olmalı
+     Merhaba Dünya 1
+     Merhaba Dünya 2
+     Merhaba Dünya 3
+      ....
+      ....
+      path="";
+      File dosya=new File(path)
+      if (dosya.exists())  // dosya var mı
+    */
     public static void main(String[] args) throws IOException {
         String path = "src/test/java/ApachePOI/resource/YeniExcelMerhaba.xlsx";
         File f = new File(path);
