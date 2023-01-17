@@ -66,6 +66,7 @@ public class GWD {
                     //System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
                     WebDriverManager.chromedriver().setup();
 
+                    // Jenkins icin hafizada maximize olarak web sayfasinin goruntusunu gelmesi icin konuldu
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
 
